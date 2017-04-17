@@ -26,7 +26,7 @@
 {
     if (central.state == CBManagerStatePoweredOn) {
         
-        NSArray* service = @[[CBUUID UUIDWithString:@"ffe0"]];
+        NSArray* service = @[[CBUUID UUIDWithString:kServiceName]];
         [central scanForPeripheralsWithServices:service options:nil];
         
     }
